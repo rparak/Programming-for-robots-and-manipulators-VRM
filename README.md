@@ -2,7 +2,7 @@
 
 
 ## Contact Info:
-Roman.Parak@outlook.com
+Roman.Parak@vutbr.cz or Microsoft Teams
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
