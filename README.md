@@ -2,6 +2,7 @@
 
 ## Resources and Literature:
 **Textbooks:**
+
 Introduction to AI Robotics, Robin R. Murphy
 
 Roboty a robotizované výrobní technologie, Zdeněk Kolíbal
@@ -17,6 +18,7 @@ Industrial Robotics: Theory, Modelling and Control, Sam Cubero
 Mathematics for Computer Graphics, John Vince
 
 **Other:**
+
 IEEE Xplore
 
 Science Direct
