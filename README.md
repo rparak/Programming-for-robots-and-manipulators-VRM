@@ -8,7 +8,11 @@
 
 **Software:**
 ```bash
-Robot Operating System (ROS), RoboStudio ABB, Automation Studio B&R, Linux Ubuntu (16.04 or 18.04), Unity3D, Vuforia
+Robot Operating System (ROS)
+RoboStudio ABB
+Automation Studio B&R
+Linux Ubuntu (16.04 or 18.04)
+Unity3D and Vuforia
 ```
 
 **Programming Language:**
