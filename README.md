@@ -9,6 +9,7 @@
 5. Planning Algorithms, Steven M. LaValle
 6. Industrial Robotics: Theory, Modelling and Control, Sam Cubero
 7. Mathematics for Computer Graphics, John Vince
+
 **Other:**
 1. IEEE Xplore
 2. Science Direct
