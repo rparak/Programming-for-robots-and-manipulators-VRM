@@ -1,5 +1,9 @@
 # Programming for robots and manipulators (VRM)
 
+<p align="center">
+<img src="https://github.com/rparak/ABB-RobotStudo-Tutorial-Simple/blob/master/images/lab.PNG" width="700" height="350">
+</p>
+
 ## Requirements:
 
 **Software:**
