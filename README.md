@@ -18,7 +18,14 @@ Algorithmization, Programming, Mathematics and Optimization
 ```
 ## Description:
 
-Subject enables the students to acquire skills and knowledge of programming industry/mobile robots, manipulators and enables them to extend these skills, integration and deployment in real industry application. The focus is on practical skills of students in laboratory exercises which contains four blocks: Introduction, Robotic Operating System, Simulation and digital twins, and Virtual/Augmented reality in robotics.
+The VRM (Programming for Robots and Manipulators) course enables students to acquire skills and knowledge in programming industrial / mobile robots and manipulators. This course also expands skills with advanced system integration and deployment in real-world robotic applications.
+
+The main focus is on students' practical skills in laboratory exercises, which include several blocks:
+1. RobotStudio ABB
+2. Forward/Inverse kinematics
+3. Robotic operating system (ROS) extended by an industrial package ROS-Industrial (ROS-I)
+4. Virtual / digital twin using Unity3D extended by system integration with B&R Automation PLC via OPC UA
+5. A simple demonstration of augmented reality based on robotics
 
 Link: https://www.fme.vutbr.cz/en/studenti/predmety/235124
 
