@@ -1,14 +1,18 @@
 # Programming for robots and manipulators (VRM)
 
 <p align="center">
-<img src="https://github.com/rparak/ABB-RobotStudo-Tutorial-Simple/blob/master/images/lab.PNG" width="700" height="350">
+<img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/lab.png width="650" height="350">
 </p>
 
 ## Requirements:
 
 **Software:**
 ```bash
-Robot Operating System (ROS), RoboStudio ABB, Automation Studio B&R, Linux Ubuntu (16.04 or 18.04), Unity3D, Vuforia
+Robot Operating System (ROS)
+RoboStudio ABB
+Automation Studio B&R
+Linux Ubuntu (16.04 or 18.04)
+Unity3D and Vuforia
 ```
 
 **Programming Language:**
@@ -27,13 +31,25 @@ The VRM (Programming for Robots and Manipulators) course enables students to acq
 The main focus is on students practical skills in laboratory exercises, which include several blocks:
 1. RobotStudio ABB
 2. Forward/Inverse kinematics
-3. Robotic operating system (ROS) extended by an industrial package ROS-Industrial (ROS-I)
+3. Robotic operating system (ROS) extended extended by advanced industrial capabilities ROS-Industrial (ROS-I)
 4. Virtual / digital twin using Unity3D extended by system integration with B&R Automation PLC via OPC UA
 5. A simple demonstration of augmented reality based on robotics
 
 These few blocks are extended by theoretical knowledge, which students acquire in the form of lectures.
 
-Link: https://www.fme.vutbr.cz/en/studenti/predmety/235124
+Link: [Detailed description of the Syllabus (Czech)](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/Course_description/Descrition.pdf)
+
+Link: [Course descrition - FME, BUT](https://www.fme.vutbr.cz/en/studenti/predmety/235124)
+
+## Detailed description of the Syllabus:
+
+**Week 1 (8. 2. 2021):**
+- Introduction to the course, main goals, methods and evaluation criteria, etc.
+- Introduction to the issue, development and definition of robots, manipulators.
+- Introduction of an advanced robotic production line called Industry 4.0 (i4C).
+
+Link: [Lecture 1](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/1)
+
 
 ## Resources and Literature:
 **Textbooks:**
