@@ -1,5 +1,27 @@
 # Programming for robots and manipulators (VRM)
 
+## Requirements:
+
+**Software:**
+```bash
+Robot Operating System (ROS), RoboStudio ABB, Automation Studio B&R, Linux Ubuntu (16.04 or 18.04), Unity3D, Vuforia
+```
+
+**Programming Language:**
+```bash
+Python or/and C/C++, C#
+```
+
+**Other:**
+```bash
+Algorithmization, Programming, Mathematics and Optimization
+```
+## Description:
+
+Subject enables the students to acquire skills and knowledge of programming industry/mobile robots, manipulators and enables them to extend these skills, integration and deployment in real industry application. The focus is on practical skills of students in laboratory exercises which contains four blocks: Introduction, Robotic Operating System, Simulation and digital twins, and Virtual/Augmented reality in robotics.
+
+Link: https://www.fme.vutbr.cz/en/studenti/predmety/235124
+
 ## Resources and Literature:
 **Textbooks:**
 1. **Introduction to AI Robotics**, Robin R. Murphy
