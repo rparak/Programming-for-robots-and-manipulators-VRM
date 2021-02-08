@@ -46,7 +46,7 @@ Link: [Course descrition - FME, BUT](https://www.fme.vutbr.cz/en/studenti/predme
 **Week 1 (8. 2. 2021):**
 - Introduction to the course, main goals, methods and evaluation criteria, etc.
 - Introduction to the issue, development and definition of robots, manipulators.
-- Introduction of an advanced robotic production line called Industry 4.0 (i4C)
+- Introduction of an advanced robotic production line called Industry 4.0 (i4C).
 
 Link: [Lecture 1](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/1)
 
