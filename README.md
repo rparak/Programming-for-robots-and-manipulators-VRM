@@ -2,7 +2,7 @@
 
 ## Resources and Literature:
 **Textbooks:**
-1. Introduction to AI Robotics, Robin R. Murphy
+1. **Introduction to AI Robotics**, Robin R. Murphy
 2. Roboty a robotizované výrobní technologie, Zdeněk Kolíbal
 3. Handbook of Robotics, Bruno Siciliano
 4. Robotics, Vision and Control, Peter Corke
