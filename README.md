@@ -85,7 +85,7 @@ where $s_p$ is the maximum possible score, $s_{max}$ is the initial maximum scor
 3. [Springer - International Publisher Science](https://www.springer.com/gp)
 
 ## Contact Info:
-Roman.Parak@vutbr.cz or Microsoft Teams
+Roman.Parak@vutbr.cz or Microsoft Teams (recommended)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
