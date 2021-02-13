@@ -54,17 +54,9 @@ Link: [Lecture 1](https://github.com/rparak/Programming-for-robots-and-manipulat
 
 **Description:**
 - Active participation in laboratory exercises and lectures: 10 points
-- Seminar paper: 20 points
-
-[Link](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Project/1_Seminar_paper)
-
-- Project no. 1: 30 points
-
-[Link](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Project/2_Project_1)
-
-- Project no. 2 (Team project): 40 points
-
-[Link](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Project/2_Project_2)
+- Seminar paper: 20 points -> [Link](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Project/1_Seminar_paper)
+- Project no. 1: 30 points -> [Link](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Project/2_Project_1)
+- Project no. 2 (Team project): 40 points -> [Link](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Project/2_Project_2)
 
 The condition for writing a seminar paper is the use of LaTex (e.g., Overleaf -> Online LaTeX Editor). Projects are submitted via GitHub, which will contain a folder of all relevant files for each project and a short description in English.
 
