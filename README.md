@@ -60,7 +60,11 @@ Link: [Lecture 1](https://github.com/rparak/Programming-for-robots-and-manipulat
 
 The condition for writing a seminar paper is the use of LaTex (e.g., Overleaf -> Online LaTeX Editor). Projects are submitted via GitHub, which will contain a folder of all relevant files for each project and a short description in English.
 
+The penalty equation for late submission of a project is defined as:
+
+'''math
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
+'''
 
 
 ## Resources and Literature:
