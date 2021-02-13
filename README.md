@@ -17,7 +17,7 @@ Unity3D and Vuforia
 
 **Programming Language:**
 ```bash
-Python or/and C/C++, C#
+Python and/or C/C++, C#
 ```
 
 **Other:**
@@ -31,13 +31,13 @@ The VRM (Programming for Robots and Manipulators) course enables students to acq
 The main focus is on students practical skills in laboratory exercises, which include several blocks:
 1. RobotStudio ABB
 2. Forward/Inverse kinematics
-3. Robotic operating system (ROS) extended extended by advanced industrial capabilities ROS-Industrial (ROS-I)
+3. Robotic operating system (ROS) extended by advanced industrial capabilities ROS-Industrial (ROS-I)
 4. Virtual / digital twin using Unity3D extended by system integration with B&R Automation PLC via OPC UA
 5. A simple demonstration of augmented reality based on robotics
 
 These few blocks are extended by theoretical knowledge, which students acquire in the form of lectures.
 
-Link: [Detailed description of the Syllabus (Czech)](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/Course_description/Descrition.pdf)
+Link: [Detailed description of the Syllabus (Czech)](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/Course_description/Description.pdf)
 
 Link: [Course descrition - FME, BUT](https://www.fme.vutbr.cz/en/studenti/predmety/235124)
 
