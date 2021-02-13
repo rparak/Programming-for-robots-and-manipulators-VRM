@@ -63,7 +63,7 @@ The condition for writing a seminar paper is the use of LaTex (e.g., Overleaf ->
 The penalty equation for late submission of a project is defined as:
 
 <p align="center">
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;s_p=(s_{max}-\frac{\Delta t}{24})+\frac{s_{max}}{10}" title="\Large s_p=(s_{max}-\frac{\Delta t}{24})+\frac{s_{max}}{10}" />
+![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
 </p>
 
 
