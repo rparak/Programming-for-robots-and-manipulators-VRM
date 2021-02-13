@@ -50,6 +50,24 @@ Link: [Course descrition - FME, BUT](https://www.fme.vutbr.cz/en/studenti/predme
 
 Link: [Lecture 1](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/1)
 
+## Assessment Methodology:
+
+**Description:**
+- Active participation in laboratory exercises and lectures: 10 points
+- Seminar paper: 20 points
+- Project no. 1: 30 points
+- Project no. 2 (Team project): 40 points
+
+The condition for writing a seminar paper is the use of LaTex (e.g., Overleaf -> Online LaTeX Editor). Projects are submitted via GitHub, which will contain a folder of all relevant files for each project and a short description in English.
+
+The penalty equation for late submission of a project is defined as:
+
+<p align="center">
+$\Large s_p = (s_{max} - \frac{\Delta t}{24}) - \delta_p,$
+</p>
+
+where $s_p$ is the maximum possible score, $s_{max}$ is the initial maximum score, $\Delta t$ is defined as the difference between the date of deadline and the date of assignment of the project, and $\delta_p$ is the project error factor defined as $\frac{s_{max}}{10}$.
+
 
 ## Resources and Literature:
 **Textbooks:**
@@ -67,7 +85,7 @@ Link: [Lecture 1](https://github.com/rparak/Programming-for-robots-and-manipulat
 3. [Springer - International Publisher Science](https://www.springer.com/gp)
 
 ## Contact Info:
-Roman.Parak@vutbr.cz or Microsoft Teams
+Roman.Parak@vutbr.cz or Microsoft Teams (recommended)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
