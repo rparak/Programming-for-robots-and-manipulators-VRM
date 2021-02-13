@@ -62,6 +62,14 @@ The condition for writing a seminar paper is the use of LaTex (e.g., Overleaf ->
 
 The penalty equation for late submission of a project is defined as:
 
+$@
+\usepackage{amsmath}
+$@
+
+\begin{equation} \label{eqn_1}
+    s_p = (s_{max} - \frac{\Delta t}{24}) + \frac{s_{max}}{10}
+\end{equation}
+
 <img src="https://render.githubusercontent.com/render/math?math=\Large s_p = (s_{max} - \frac{\Delta t}{24}) + \frac{s_{max}}{10}">
 
 
