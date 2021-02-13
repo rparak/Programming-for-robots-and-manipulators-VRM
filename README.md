@@ -37,7 +37,7 @@ The main focus is on students practical skills in laboratory exercises, which in
 
 These few blocks are extended by theoretical knowledge, which students acquire in the form of lectures.
 
-Link: [Detailed description of the Syllabus (Czech)](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/Course_description/Descrition.pdf)
+Link: [Detailed description of the Syllabus (Czech)](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/Course_description/Description.pdf)
 
 Link: [Course descrition - FME, BUT](https://www.fme.vutbr.cz/en/studenti/predmety/235124)
 
