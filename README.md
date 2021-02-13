@@ -63,10 +63,10 @@ The condition for writing a seminar paper is the use of LaTex (e.g., Overleaf ->
 The penalty equation for late submission of a project is defined as:
 
 <p align="center">
-$\Large s_p = (s_{max} - \frac{\Delta t}{24}) + \frac{s_{max}}{10},$
+$\Large s_p = (s_{max} - \frac{\Delta t}{24}) - \delta_p,$
 </p>
 
-where $s_p$ is the maximum possible score, $s_{max}$ is the initial maximum score, and $\Delta t$ is defined as the difference between the date of deadline and the date of assignment of the project.
+where $s_p$ is the maximum possible score, $s_{max}$ is the initial maximum score, $\Delta t$ is defined as the difference between the date of deadline and the date of assignment of the project, and %\delta_p% is factor of the project error defined as $\frac{s_{max}}{10}$.
 
 
 ## Resources and Literature:
