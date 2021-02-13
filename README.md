@@ -66,7 +66,7 @@ The penalty equation for late submission of a project is defined as:
 $\Large s_p = (s_{max} - \frac{\Delta t}{24}) - \delta_p,$
 </p>
 
-where $s_p$ is the maximum possible score, $s_{max}$ is the initial maximum score, $\Delta t$ is defined as the difference between the date of deadline and the date of assignment of the project, and $\delta_p$ is the project error factor defined as $\frac{s_{max}}{10}$.
+where $s_p$ is the maximum possible score, $s_{max}$ is the initial maximum score, $\Delta t$ is defined as the difference between the date of deadline and the date of assignment of the project (in hours), and $\delta_p$ is the project error factor defined as $\frac{s_{max}}{10}$.
 
 
 ## Resources and Literature:
