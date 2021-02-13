@@ -76,7 +76,7 @@ $\Large s = s_{max} - p_s,$
 
 where $s_{max}$ is the initial maximum score, and $p_s$ is a penalty.
 
-
+The script for the calculation can be found at [[Link](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Course_description/project_score_calculator)].
 
 ## Resources and Literature:
 **Textbooks:**
