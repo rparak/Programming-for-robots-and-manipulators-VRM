@@ -50,6 +50,16 @@ Link: [Course descrition - FME, BUT](https://www.fme.vutbr.cz/en/studenti/predme
 
 Link: [Lecture 1](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/1)
 
+## Assessment Methodology:
+
+**Description:**
+- Active participation in laboratory exercises and lectures: 10 points
+- Seminar paper: 20 points
+- Project no. 1: 30 points
+- Project no. 2 (Team project): 40 points
+
+The condition for writing a seminar paper is the use of LaTex (e.g., Overleaf, Online LaTeX Editor). Projects are submitted via GitHub, which will contain a folder of all relevant files for each project and a short description in English.
+
 
 ## Resources and Literature:
 **Textbooks:**
