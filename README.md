@@ -58,7 +58,11 @@ Link: [Lecture 1](https://github.com/rparak/Programming-for-robots-and-manipulat
 - Project no. 1: 30 points
 - Project no. 2 (Team project): 40 points
 
-The condition for writing a seminar paper is the use of LaTex (e.g., Overleaf $\rightarrow$ Online LaTeX Editor). Projects are submitted via GitHub, which will contain a folder of all relevant files for each project and a short description in English.
+The condition for writing a seminar paper is the use of LaTex (e.g., Overleaf $'\rightarrow'$ Online LaTeX Editor). Projects are submitted via GitHub, which will contain a folder of all relevant files for each project and a short description in English.
+
+```math
+SE = \frac{\sigma}{\sqrt{n}}
+```
 
 
 ## Resources and Literature:
