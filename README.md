@@ -50,6 +50,11 @@ Link: [Course descrition - FME, BUT](https://www.fme.vutbr.cz/en/studenti/predme
 
 Link: [Lecture 1](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/1)
 
+**Week 2 (14. 2. 2021):**
+- Stationary industrial robots and single-purpose manipulators. Specific constructions of industrial robots, parallel structures. Programmable logic controllers (PLC) and use in robotics.
+- Control and programming of industrial robots. Introduction of basic tools for creating robotic simulations.
+- Assignment of seminar paper.
+
 ## Assessment Methodology:
 
 **Description:**
@@ -63,7 +68,7 @@ The condition for writing a seminar paper is the use of LaTex (e.g., Overleaf ->
 The penalty equation for late submission of a project is defined as:
 
 <p align="center">
-$\Large p_s = \frac{\Delta t}{24}e^{\frac{1}{2}} - \delta_p,$
+$\Large p_s = \lvert \frac{\Delta t}{24}e^{\frac{1}{2}} - \delta_p \rvert,$
 </p>
 
 where $\Delta t$ is defined as the difference between the date of deadline and the date of assignment of the project (in hours), and $\delta_p$ is the project error factor defined as $\frac{s_{max}}{10}$.
