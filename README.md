@@ -50,6 +50,11 @@ Link: [Course descrition - FME, BUT](https://www.fme.vutbr.cz/en/studenti/predme
 
 Link: [Lecture 1](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/1)
 
+**Week 2 (14. 2. 2021):**
+- Stationary industrial robots and single-purpose manipulators. Specific constructions of industrial robots, parallel structures. Programmable logic controllers (PLC) and use in robotics.
+- Control and programming of industrial robots. Introduction of basic tools for creating robotic simulations.
+- Assignment of seminar paper.
+
 ## Assessment Methodology:
 
 **Description:**
