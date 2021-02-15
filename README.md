@@ -55,7 +55,7 @@ Link: [Lecture 1](https://github.com/rparak/Programming-for-robots-and-manipulat
 - Control and programming of industrial robots. Introduction of basic tools for creating robotic simulations.
 - Assignment of seminar paper.
 
-Link: [Lecture 1](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/2)
+Link: [Lecture 2](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/2)
 
 ## Assessment Methodology:
 
