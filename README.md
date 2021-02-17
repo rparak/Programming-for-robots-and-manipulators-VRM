@@ -59,7 +59,8 @@ Link: [Lecture 2](https://github.com/rparak/Programming-for-robots-and-manipulat
 
 **Week 3 (22. 2. 2021):**
 - End-effectors and their adaptability.
-- ABB RobotStudio - Workshop (Part 1: Introduction, Create tool, Simple task with an industrial robot, etc.).
+- ABB RobotStudio - Workshop (Part 1: Introduction, Create tool, Simple task with an industrial robot, etc.)
+- Assignment of project (Robot control using ABB RobotStudio).
 
 **Week 3 (1. 3. 2021):**
 - ABB RobotStudio - Workshop (Part 2: Simple task with an collaborative robot, Conveyor control, Smart gripper, etc.)
