@@ -3,7 +3,7 @@
 
 MIT License
 
-Copyright (c) 2021 Roman Parak
+Copyright (c) 2020 Roman Parak
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -64,7 +64,7 @@ def main():
     # Initialize input data
     PROJECT_TYPE     = 1 # 1 -> Seminar Paper; 2 -> Project no. 1; 3 -> Project no. 3
     PROJECT_TYPE_str = ['Seminar Paper', 'Project 1', 'Project 2']
-    CALUCLATOR_TEST  = True
+    CALUCLATOR_TEST  = False
     
     # Maximum possible score
     s_max = [20, 30, 40]
@@ -76,12 +76,12 @@ def main():
     print('[INFO] Possible score calculator for the project:', PROJECT_TYPE_str[PROJECT_TYPE-1])
 
     # Assignment date [Seminar Paper, Project 1, Project 2]
-    s_dt   = [datetime.datetime(2021, 2, 15), datetime.datetime(2021, 2, 22), datetime.datetime(2021, 3, 29)]
+    s_dt   = [datetime.datetime(2021, 2, 15, 0), datetime.datetime(2021, 2, 22, 0), datetime.datetime(2021, 3, 29, 0)]
     # Deadline [Seminar Paper, Project 1, Project 2]
-    d_dt   = [datetime.datetime(2021, 3, 29), datetime.datetime(2021, 3, 22), datetime.datetime(2021, 5, 3)]
-    # Auxiliary data for the calculation test (one hour later)
-    aux_dt = [datetime.datetime(2021, 3, 30), datetime.datetime(2021, 3, 23), datetime.datetime(2021, 5, 4)]
-
+    d_dt   = [datetime.datetime(2021, 3, 30, 0), datetime.datetime(2021, 3, 23, 0), datetime.datetime(2021, 5, 4, 0)]
+    # Auxiliary data for the calculation test (six hour later)
+    aux_dt = [datetime.datetime(2021, 3, 30, 6), datetime.datetime(2021, 3, 23, 6), datetime.datetime(2021, 5, 4, 6)]
+    
     # Current time
     c_dt = datetime.datetime.now()
 
@@ -106,7 +106,7 @@ def main():
     Delta_t_sec = Delta_t.total_seconds()
     # Transofrm seconds to hours
     Delta_t_hr  = divmod(Delta_t_sec, 3600)[0]
-
+    
     # The main condition of the penalty for the project
     if Delta_t_hr >= 0:
         # Success
