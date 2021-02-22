@@ -63,6 +63,7 @@ Link: [Lecture 2](https://github.com/rparak/Programming-for-robots-and-manipulat
 - Assignment of project.
 
 Link: [Lecture 3](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/3)
+
 Link: [Laboratory 1](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lab/1)
 
 **Week 4 (1. 3. 2021):**
