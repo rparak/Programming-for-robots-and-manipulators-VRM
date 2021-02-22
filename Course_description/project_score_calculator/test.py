@@ -56,7 +56,7 @@ def penalty_eqn(s_m, Dt):
     # difference between the date of deadline and the date of assignment
     delta_p = s_m/10 
     # main equation of penalty for late submission
-    p_s     = abs((Dt/24)*np.exp(0.5) - delta_p)
+    p_s     = abs((Dt/24)*np.exp(0.5)) + delta_p
     
     return round(s_m - p_s) 
 

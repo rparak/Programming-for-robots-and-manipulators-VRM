@@ -57,6 +57,14 @@ Link: [Lecture 1](https://github.com/rparak/Programming-for-robots-and-manipulat
 
 Link: [Lecture 2](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/2)
 
+**Week 3 (22. 2. 2021):**
+- End-effectors and their adaptability.
+- ABB RobotStudio - Workshop (Part 1: Introduction, Create tool, Simple task with an industrial robot, etc.)
+- Assignment of project.
+
+**Week 3 (1. 3. 2021):**
+- ABB RobotStudio - Workshop (Part 2: Simple task with an collaborative robot, Conveyor control, Smart gripper, etc.)
+
 ## Assessment Methodology:
 
 **Description:**
@@ -70,7 +78,7 @@ The condition for writing a seminar paper is the use of LaTex (e.g., Overleaf ->
 The penalty equation for late submission of a project is defined as:
 
 <p align="center">
-$\Large p_s = \lvert \frac{\Delta t}{24}e^{\frac{1}{2}} - \delta_p \rvert,$
+$\Large p_s = \lvert \frac{\Delta t}{24}e^{\frac{1}{2}} \rvert + \delta_p,$
 </p>
 
 where $\Delta t$ is defined as the difference between the date of deadline and the date of assignment of the project (in hours), and $\delta_p$ is the project error factor defined as $\frac{s_{max}}{10}$.
