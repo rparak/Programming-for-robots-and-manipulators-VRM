@@ -62,7 +62,9 @@ Link: [Lecture 2](https://github.com/rparak/Programming-for-robots-and-manipulat
 - ABB RobotStudio - Workshop (Part 1: Introduction, Create tool, Simple task with an industrial robot, etc.)
 - Assignment of project.
 
-**Week 3 (1. 3. 2021):**
+Link: [Laboratory 1](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lab/1)
+
+**Week 4 (1. 3. 2021):**
 - ABB RobotStudio - Workshop (Part 2: Simple task with an collaborative robot, Conveyor control, Smart gripper, etc.)
 
 ## Assessment Methodology:
