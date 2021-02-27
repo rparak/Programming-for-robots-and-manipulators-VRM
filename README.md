@@ -73,6 +73,8 @@ Link: [Laboratory 1](https://github.com/rparak/Programming-for-robots-and-manipu
 **Week 4 (1. 3. 2021):**
 - ABB RobotStudio - Workshop (Part 2: Simple task with an collaborative robot, Conveyor control, Smart gripper, Sync., etc.)
 
+Link: [Laboratory 2](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lab/2)
+
 <p align="center">
 <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/RS_LAB_2.PNG width="650" height="350">
 </p>
