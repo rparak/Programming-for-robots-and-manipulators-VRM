@@ -80,7 +80,7 @@ Link: [Laboratory 2](https://github.com/rparak/Programming-for-robots-and-manipu
 </p>
 
 **Week 5 (8. 3. 2021):**
-- Forward / Inverse Kinematics
+- Forward / Inverse Kinematics.
 - Demonstration of Forward / Inverse kinematics on a two-link simple manipulator. Creation of a working envelope of a specified robotic construction.
 
 Link: [Lecture 4](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/4)
