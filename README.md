@@ -88,7 +88,7 @@ Link: [Lecture 4](https://github.com/rparak/Programming-for-robots-and-manipulat
 Link: [Laboratory 3](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lab/3)
 
 <p align="center">
-<img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/FK_IK_LAB_3.PNG width="650" height="350">
+<img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/FK_IK_LAB_3.PNG width="650" height="300">
 </p>
 
 ## Assessment Methodology:
