@@ -87,6 +87,10 @@ Link: [Lecture 4](https://github.com/rparak/Programming-for-robots-and-manipulat
 
 Link: [Laboratory 3](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lab/3)
 
+<p align="center">
+<img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/FK_IK_LAB_3.PNG width="650" height="300">
+</p>
+
 ## Assessment Methodology:
 
 **Description:**
@@ -120,10 +124,11 @@ The script for the calculation can be found at [[Link](https://github.com/rparak
 1. **Introduction to AI Robotics**, Robin R. Murphy
 2. **Roboty a robotizované výrobní technologie**, Zdeněk Kolíbal
 3. **Handbook of Robotics**, Bruno Siciliano
-4. **Robotics, Vision and Control**, Peter Corke
-5. **Planning Algorithms**, Steven M. LaValle
-6. **Industrial Robotics: Theory, Modelling and Control**, Sam Cubero
-7. **Mathematics for Computer Graphics**, John Vince
+4. **Modern Robotics: Mechanics, Planning, and Control**, Kevin M. Lynch and Frank C. Park
+5. **Robotics, Vision and Control**, Peter Corke
+6. **Planning Algorithms**, Steven M. LaValle
+7. **Industrial Robotics: Theory, Modelling and Control**, Sam Cubero
+8. **Mathematics for Computer Graphics**, John Vince
 
 **Other:**
 1. [IEEE Xplore](https://ieeexplore.ieee.org/Xplore/home.jsp)
