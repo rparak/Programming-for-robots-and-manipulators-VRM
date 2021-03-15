@@ -91,6 +91,12 @@ Link: [Laboratory 3](https://github.com/rparak/Programming-for-robots-and-manipu
 <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/FK_IK_LAB_3.PNG width="650" height="300">
 </p>
 
+** Week 6 (15. 3. 2021):**
+- Differential Kinematics and Robotic Dynamics.
+
+Link: [Lecture 5](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/4)
+
+
 ## Assessment Methodology:
 
 **Description:**
