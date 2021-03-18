@@ -91,6 +91,13 @@ Link: [Laboratory 3](https://github.com/rparak/Programming-for-robots-and-manipu
 <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/FK_IK_LAB_3.PNG width="650" height="300">
 </p>
 
+**Week 6 (15. 3. 2021):**
+- Differential Kinematics and Robotic Dynamics.
+- BRNO INDUSTRY 4.0 | 2021 ([online](https://brno-industry-40-online.b2match.io)): 5th International B2B Conference about Production Digitization and Smart Technologies for Industry
+
+Link: [Lecture 5](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/4)
+
+
 ## Assessment Methodology:
 
 **Description:**
