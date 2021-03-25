@@ -108,8 +108,8 @@ Link: [Lecture 6](https://github.com/rparak/Programming-for-robots-and-manipulat
 Link: [Laboratory 5](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lab/5)
 
 <p align="center">
-<img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/manipulator.png width="450" height="250">
- <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/bezier.png width="450" height="250">
+<img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/manipulator.png width="500" height="350">
+ <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/bezier.png width="500" height="350">
 </p>
 
 
