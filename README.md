@@ -103,7 +103,7 @@ Link: [Laboratory 4](https://github.com/rparak/Programming-for-robots-and-manipu
 **Week 7 (22. 3. 2021):**
 - Motion planning in robotics (mobile, industrial robots) using classical Joint / Cartesian interpolation and other planning methods such as RRT (Rapidly-exploring random tree), PRM (Probabilistic roadmap) and Reinforcement / Deep-Reinforcement learning.
 - Bezier curves (Linear, Quadratic, Cubic).
-- Demonstration of simple motion planning using Joint / Cartesian interpolation on a two-link manipulator. Trajectory smoothing using Bézier curves. Animation of the resulting trajectory, control of reachable trajectory points, etc.
+- Demonstration of simple motion planning using Joint / Cartesian interpolation on a two-link manipulator. Trajectory smoothing using Bézier curves. Animation of the resulting trajectory, check of reachable points, etc.
 
 Link: [Lecture 6](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/6)
 
