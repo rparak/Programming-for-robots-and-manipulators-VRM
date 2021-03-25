@@ -94,14 +94,16 @@ Link: [Laboratory 3](https://github.com/rparak/Programming-for-robots-and-manipu
 **Week 6 (15. 3. 2021):**
 - Differential Kinematics and Robotic Dynamics.
 - BRNO INDUSTRY 4.0 | 2021 ([online](https://brno-industry-40-online.b2match.io)): 5th International B2B Conference about Production Digitization and Smart Technologies for Industry
+- Demonstration of Differential Kinematics on a two-link simple manipulator. Example of dynamics calculation using Euler-Lagrange equation.
 
 Link: [Lecture 5](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/5)
 
 Link: [Laboratory 4](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lab/4)
 
 **Week 7 (22. 3. 2021):**
-- tesxt
-- text
+- Motion planning in robotics (mobile, industrial robots) using classical Joint / Cartesian interpolation and other planning methods such as RRT (Rapidly-exploring random tree), PRM (Probabilistic roadmap) and Reinforcement / Deep-Reinforcement learning.
+- Bezier curves (Linear, Quadratic, Cubic).
+- Demonstration of simple motion planning using Joint / Cartesian interpolation on a two-link manipulator. Trajectory smoothing using Bézier curves. Animation of the resulting trajectory, control of reachable trajectory points, etc.
 
 Link: [Lecture 6](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/6)
 
@@ -111,7 +113,6 @@ Link: [Laboratory 5](https://github.com/rparak/Programming-for-robots-and-manipu
 <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/manipulator.png width="450" height="350">
  <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/bezier.png width="450" height="350">
 </p>
-
 
 ## Assessment Methodology:
 
