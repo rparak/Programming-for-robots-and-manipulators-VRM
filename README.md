@@ -97,6 +97,21 @@ Link: [Laboratory 3](https://github.com/rparak/Programming-for-robots-and-manipu
 
 Link: [Lecture 5](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/5)
 
+Link: [Laboratory 4](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lab/4)
+
+**Week 7 (22. 3. 2021):**
+- tesxt
+- text
+
+Link: [Lecture 6](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/6)
+
+Link: [Laboratory 5](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lab/5)
+
+<p align="center">
+<img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/manipulator.png width="650" height="300">
+ <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/bezier.png width="650" height="300">
+</p>
+
 
 ## Assessment Methodology:
 
