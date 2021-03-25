@@ -1,7 +1,7 @@
 # Programming for robots and manipulators (VRM)
 
 <p align="center">
-<img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/lab.png width="650" height="350">
+<img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/lab.png width="800" height="475">
 </p>
 
 ## Requirements:
@@ -95,7 +95,7 @@ Link: [Laboratory 3](https://github.com/rparak/Programming-for-robots-and-manipu
 - Differential Kinematics and Robotic Dynamics.
 - BRNO INDUSTRY 4.0 | 2021 ([online](https://brno-industry-40-online.b2match.io)): 5th International B2B Conference about Production Digitization and Smart Technologies for Industry
 
-Link: [Lecture 5](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/4)
+Link: [Lecture 5](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/5)
 
 
 ## Assessment Methodology:
