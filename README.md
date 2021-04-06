@@ -114,6 +114,17 @@ Link: [Laboratory 5](https://github.com/rparak/Programming-for-robots-and-manipu
  <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/bezier.png width="400" height="325">
 </p>
 
+**Week 8 (29. 3. 2021):**
+- ROS (Robot Operating System), ROS-I (Industrial) Introduction. 
+- ROS installation (melodic distribution), package configuration, explanation of basic concepts (topics, services, messages, etc.)
+- A simple example of TurtleSim motion control and working with a terminal.
+- Creating a ROS workspace for simple control of TurtleSim motion using the Python programming language (catkin, rospy, launch file, etc.)
+
+Link: [Laboratory 6](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lab/6)
+
+**Week 9 (5. 4. 2021):**
+- National Holiday (Easter Monday)
+
 ## Assessment Methodology:
 
 **Description:**
