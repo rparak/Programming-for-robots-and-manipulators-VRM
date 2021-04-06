@@ -145,7 +145,7 @@ Link: [Laboratory 6](https://github.com/rparak/Programming-for-robots-and-manipu
 - Industry 5.0, 6.0 and automation a few years later.
 
 <p align="center">
-<img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/i4c_m.png width="800" height="475">
+<img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/i4C_m.png width="800" height="475">
 </p>
 
 **Week 13 (3. 5. 2021):**
