@@ -137,7 +137,7 @@ Link: [Laboratory 6](https://github.com/rparak/Programming-for-robots-and-manipu
 
 **Week 11 (19. 4. 2021):**
 - Unity3D as a tool for creating digital / virtual twins, connection with B&R Automation Studio (follow-up project from the VPL course).
-- Introduction to augmented reality and a simple demonstration of the application.
+- Introduction to augmented reality and a simple demonstration of the application in the real world.
 
 
 **Week 12 (26. 4. 2021):**
