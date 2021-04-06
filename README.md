@@ -122,6 +122,11 @@ Link: [Laboratory 5](https://github.com/rparak/Programming-for-robots-and-manipu
 
 Link: [Laboratory 6](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lab/6)
 
+<p align="center">
+ <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/turtle1.png width="400" height="325">
+ <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/turtle2.png width="400" height="325">
+</p>
+
 **Week 9 (5. 4. 2021):**
 - National Holiday (Easter Monday)
 
