@@ -122,8 +122,31 @@ Link: [Laboratory 5](https://github.com/rparak/Programming-for-robots-and-manipu
 
 Link: [Laboratory 6](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lab/6)
 
+<p align="center">
+ <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/turtle1.png width="375" height="325">
+ <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/turtle2.png width="375" height="325">
+</p>
+
 **Week 9 (5. 4. 2021):**
 - National Holiday (Easter Monday)
+
+
+**Week 10 (12. 4. 2021):**
+- Presentation of students' Bachelor's theses (ROS, robotics, system integration, etc.)
+
+
+**Week 11 (19. 4. 2021):**
+- Unity3D as a tool for creating digital / virtual twins, connection with B&R Automation Studio (follow-up project from the VPL course).
+- Introduction to augmented reality and a simple demonstration of the application.
+
+
+**Week 12 (26. 4. 2021):**
+- Introduction to the concept of Industry 4.0. 
+- Industry 5.0, 6.0 and automation a few years later.
+
+
+**Week 13 (3. 5. 2021):**
+- Presentation of team projects.
 
 ## Assessment Methodology:
 

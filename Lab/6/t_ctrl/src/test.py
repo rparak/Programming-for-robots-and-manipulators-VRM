@@ -106,7 +106,7 @@ def move(lin_vel_x, ang_vel_th):
 
 if __name__ == '__main__':
     try:
-        # Read Parameters from Argument: rosrun t_ctrl test.py 2 1
+        # Read Parameters from Argument: rosrun t_ctrl test.py 2.0 1.0
         move(float(sys.argv[1]), float(sys.argv[2]))
     except rospy.ROSInterruptException: 
         pass
