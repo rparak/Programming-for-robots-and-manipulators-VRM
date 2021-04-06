@@ -1,0 +1,4 @@
+<launch>
+    <node pkg = 'turtlesim' name='sim' type='turtlesim_node' />
+    <node pkg = 't_ctrl' name='read_pos' type='read_pos.py' output='screen'/>
+</launch>
