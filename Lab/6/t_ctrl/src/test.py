@@ -23,7 +23,7 @@ SOFTWARE.
 Author   : Roman Parak
 Email    : Roman.Parak@outlook.com
 Github   : https://github.com/rparak
-File Name: bezier_curve_example_2d.py
+File Name: test.py
 ## =========================================================================== ## 
 """
 # System (Default Lib.)
