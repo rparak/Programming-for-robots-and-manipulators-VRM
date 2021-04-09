@@ -132,12 +132,14 @@ Link: [Laboratory 6](https://github.com/rparak/Programming-for-robots-and-manipu
 
 
 **Week 10 (12. 4. 2021):**
+- Simple demonstration of robot motion control and trajectory planning via the ROS system using several simulation tools (RVIZ, gazebo, etc.)
+- Controlling the movement of multiple industrial robots (ABB, Fanuc, Universal Robots, etc.) using the Python programming language (catkin, rospy, launch file, etc.)
 - Presentation of students' Bachelor's theses (ROS, robotics, system integration, etc.)
 
 
 **Week 11 (19. 4. 2021):**
 - Unity3D as a tool for creating digital / virtual twins, connection with B&R Automation Studio (follow-up project from the VPL course).
-- Introduction to augmented reality and a simple demonstration of the application.
+- Introduction to augmented reality and a simple demonstration of the application in the real world.
 
 
 **Week 12 (26. 4. 2021):**
