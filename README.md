@@ -132,6 +132,8 @@ Link: [Laboratory 6](https://github.com/rparak/Programming-for-robots-and-manipu
 
 
 **Week 10 (12. 4. 2021):**
+- Simple demonstration of robot motion control and trajectory planning via the ROS system using several simulation tools (RVIZ, gazebo, etc.)
+- Controlling the movement of multiple industrial robots (ABB, Fanuc, Universal Robots, etc.) using the Python programming language (catkin, rospy, launch file, etc.)
 - Presentation of students' Bachelor's theses (ROS, robotics, system integration, etc.)
 
 
