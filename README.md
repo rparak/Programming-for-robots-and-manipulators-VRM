@@ -137,9 +137,9 @@ Link: [Laboratory 6](https://github.com/rparak/Programming-for-robots-and-manipu
 - Presentation of students' Bachelor's theses (ROS, robotics, system integration, etc.)
 
 <p align="center">
- <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/rviz_1.png width="355" height="325">
- <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/rviz_2.png width="355" height="325">
- <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/rviz_3.png width="355" height="325">
+ <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/rviz_1.png width="355" height="300">
+ <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/rviz_2.png width="355" height="300">
+ <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/rviz_3.png width="355" height="300">
 </p>
 
 **Week 11 (19. 4. 2021):**
