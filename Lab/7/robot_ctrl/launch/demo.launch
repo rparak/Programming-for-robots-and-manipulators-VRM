@@ -1,0 +1,17 @@
+<launch>
+    <!-- Initialize parameters (see robot.yaml) -->
+    <rosparam file="$(find robot_ctrl)/config/robot.yaml" command="load" />
+
+    <!-- Read Joint/Cartesian positions -->
+    <!-- rostopic echo /name - see individual script -->
+    <node pkg="robot_ctrl" type="read_joint_pose.py" name="read_joint_pose"></node>
+    <node pkg="robot_ctrl" type="read_tcp_pose.py" name="read_tcp_pose"></node>
+
+    <!-- Reset robot to home position (home position parameters are read from the robot.yaml) -->
+    <!-- rosservice call /reset_robot - see script -->
+    <node pkg="robot_ctrl" type="reset_robot.py" name="reset_robot"></node>
+
+    <!-- Cyclic change of object parameters, visibility, etc. -->
+    <!-- rosparam set /name - see script -->
+    <node pkg="robot_ctrl" type="set_object.py" name="set_object"></node>
+</launch>
