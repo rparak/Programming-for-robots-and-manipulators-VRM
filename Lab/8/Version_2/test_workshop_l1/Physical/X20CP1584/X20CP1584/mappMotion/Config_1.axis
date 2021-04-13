@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="gAxis_1" Type="axis">
+    <Property ID="BaseTypeIsReadOnly" Value="0" />
+    <Selector ID="BaseType" Value="LinearBounded">
+      <Property ID="MeasurementUnit" Value="5066068" />
+      <Property ID="MeasurementResolutionIsReadOnly" Value="0" />
+      <Property ID="MeasurementResolution" Value="0.1" />
+      <Property ID="CountDirectionIsReadOnly" Value="0" />
+      <Property ID="CountDirection" Value="Standard" />
+    </Selector>
+    <Property ID="MovementLimitsIsReadOnly" Value="0" />
+    <Selector ID="MovementLimits" Value="Internal">
+      <Group ID="Position">
+        <Property ID="LowerLimitMin" Value="-1.79769313486231E308" />
+        <Property ID="UpperLimitMax" Value="1.79769313486231E308" />
+        <Property ID="LowerLimit" Value="-2" />
+        <Property ID="UpperLimit" Value="8004" />
+      </Group>
+      <Property ID="VelocityIsReadOnly" Value="0" />
+      <Selector ID="Velocity">
+        <Property ID="VelocityMax" Value="3.4E38" />
+        <Property ID="Velocity" Value="1000" />
+      </Selector>
+      <Property ID="AccelerationIsReadOnly" Value="0" />
+      <Selector ID="Acceleration">
+        <Property ID="AccelerationMax" Value="3.4E38" />
+        <Property ID="Acceleration" Value="1500" />
+      </Selector>
+      <Property ID="DecelerationIsReadOnly" Value="0" />
+      <Selector ID="Deceleration">
+        <Property ID="DecelerationMax" Value="3.4E38" />
+        <Property ID="Deceleration" Value="1500" />
+      </Selector>
+    </Selector>
+    <Selector ID="Alarms" Value="None" />
+  </Element>
+</Configuration>

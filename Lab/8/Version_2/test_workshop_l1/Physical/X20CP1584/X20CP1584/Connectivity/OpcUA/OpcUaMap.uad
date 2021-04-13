@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcUaSource FileVersion="7" ArVersion="B4.82">
+  <Aliases>
+    <ACLAliases />
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases />
+  </Aliases>
+  <DefaultView>
+    <Module Name="&lt;Default&gt;">
+      <Task Name="axCtrl_T">
+        <Variable Name="ctrl_lin_ax_0">
+          <Variable Name="cmd">
+            <Variable Name="move_absolute_postion" />
+            <Variable Name="power" />
+            <Variable Name="home" />
+            <Variable Name="reset_error" />
+          </Variable>
+          <Variable Name="read">
+            <Variable Name="actual_position" />
+            <Variable Name="set_position" />
+            <Variable Name="actual_velocity" />
+            <Variable Name="set_velocity" />
+            <Variable Name="power_on" />
+            <Variable Name="is_homed" />
+            <Variable Name="is_active" />
+            <Variable Name="error" />
+          </Variable>
+          <Variable Name="write">
+            <Variable Name="position" />
+            <Variable Name="velocity" />
+            <Variable Name="acceleration" />
+            <Variable Name="deceleration" />
+            <Variable Name="dT">
+              <Variable Name="position" />
+            </Variable>
+          </Variable>
+          <Variable Name="actual_state" />
+        </Variable>
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>
