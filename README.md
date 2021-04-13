@@ -149,8 +149,8 @@ Link: [Laboratory 7](https://github.com/rparak/Programming-for-robots-and-manipu
 - Introduction to augmented reality and a simple demonstration of the application in the real world.
 
 <p align="center">
- <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/lin_ax_1.png width="355" height="225">
- <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/lin_ax_2.png width="355" height="225">
+ <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/lin_ax_1.png width="600" height="525">
+ <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/lin_ax_2.png width="600" height="525">
 </p>
 
 **Week 12 (26. 4. 2021):**
