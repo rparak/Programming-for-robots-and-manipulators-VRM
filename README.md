@@ -148,9 +148,11 @@ Link: [Laboratory 7](https://github.com/rparak/Programming-for-robots-and-manipu
 - Unity3D as a tool for creating digital / virtual twins, connection with B&R Automation Studio (follow-up project from the VPL course).
 - Introduction to augmented reality and a simple demonstration of the application in the real world.
 
+Link: [Laboratory 7](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lab/8)
+
 <p align="center">
- <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/lin_ax_1.png width="800" height="525">
- <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/lin_ax_2.png width="800" height="525">
+ <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/lin_ax_1.png width="650" height="425">
+ <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/lin_ax_2.png width="650" height="425">
 </p>
 
 **Week 12 (26. 4. 2021):**
