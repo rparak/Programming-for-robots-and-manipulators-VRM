@@ -136,7 +136,7 @@ Link: [Laboratory 6](https://github.com/rparak/Programming-for-robots-and-manipu
 - Controlling the movement of multiple industrial robots (ABB, Fanuc, Universal Robots, etc.) using the Python programming language (catkin, rospy, launch file, etc.)
 - Presentation of students' Bachelor's theses (ROS, robotics, system integration, etc.)
 
-Link: [Laboratory 7](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lab/7)
+Link: [Laboratory 8](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lab/7)
 
 <p align="center">
  <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/rviz_1.png width="355" height="275">
