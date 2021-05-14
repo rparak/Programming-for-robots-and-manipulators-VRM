@@ -189,10 +189,10 @@ public class br_data_processing : MonoBehaviour
         {
             // ---------- FLOAT ---------- //
             // Position of the Linear Axis (Actual {0}, Target {1})
-            GlobalVariables_OPC_UA_client.linear_ax_pos[0] = float.Parse(client_session_r.ReadValue(GlobalVariables_OPC_UA_client.linear_ax_pos_node[0]).ToString(), System.Globalization.CultureInfo.InvariantCulture);
-            GlobalVariables_OPC_UA_client.linear_ax_pos[1] = float.Parse(client_session_r.ReadValue(GlobalVariables_OPC_UA_client.linear_ax_pos_node[1]).ToString(), System.Globalization.CultureInfo.InvariantCulture);
+            GlobalVariables_OPC_UA_client.linear_ax_pos[0] = float.Parse(client_session_r.ReadValue(GlobalVariables_OPC_UA_client.linear_ax_pos_node[0]).ToString());
+            GlobalVariables_OPC_UA_client.linear_ax_pos[1] = float.Parse(client_session_r.ReadValue(GlobalVariables_OPC_UA_client.linear_ax_pos_node[1]).ToString());
             // Velocity of the Linear Axis
-            GlobalVariables_OPC_UA_client.linear_ax_vel = float.Parse(client_session_r.ReadValue(GlobalVariables_OPC_UA_client.linear_ax_vel_node).ToString(), System.Globalization.CultureInfo.InvariantCulture);
+            GlobalVariables_OPC_UA_client.linear_ax_vel = float.Parse(client_session_r.ReadValue(GlobalVariables_OPC_UA_client.linear_ax_vel_node).ToString());
             // Thread Sleep {2 ms}
             Thread.Sleep(2);
         }
