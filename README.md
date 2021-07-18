@@ -152,6 +152,7 @@ Link: [Laboratory 8](https://github.com/rparak/Programming-for-robots-and-manipu
 
 <p align="center">
  <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/lin_ax_1.png width="650" height="425">
+ <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/ar_1.JPG width="650" height="425">
  <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/lin_ax_2.png width="650" height="425">
 </p>
 
