@@ -48,9 +48,10 @@ def penalty_eqn(s_m, Dt):
     Simple function for calculating the penalty for late submission of a project.
 
     Args:
-    :in  (1): maximum possible score
-    :in  (2): difference between the date of deadline and the date of assignment of the project (in hours)
-    :out (1): rounded result of the calculation
+        (1) s_m: maximum possible score
+        (2) Dt: difference between the date of deadline and the date of assignment of the project (in hours)
+    Returns:
+        (1) parameter: rounded result of the calculation
     """ 
 
     # difference between the date of deadline and the date of assignment
