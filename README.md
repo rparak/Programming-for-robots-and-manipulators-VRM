@@ -211,6 +211,9 @@ The script for the calculation can be found at [[Link](https://github.com/rparak
 2. [Science Direct](https://www.sciencedirect.com)
 3. [Springer - International Publisher Science](https://www.springer.com/gp)
 
+## Result:
+Youtube: https://www.youtube.com/watch?v=5xKj3ECSeZc&t=4s
+
 ## Contact Info:
 Roman.Parak@vutbr.cz or Microsoft Teams (recommended)
 
