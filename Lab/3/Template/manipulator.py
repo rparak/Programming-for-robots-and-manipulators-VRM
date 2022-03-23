@@ -99,35 +99,35 @@ class Control(object):
         
         # << Calulation First Row >>
         # Rotational Part
-        Ai_aux[0, 0] = 0.0
-        Ai_aux[0, 1] = 0.0
-        Ai_aux[0, 2] = 0.0
+        Ai_aux[0, 0] = np.cos(self.rDH_param.theta[index])
+        Ai_aux[0, 1] = (-1)*(np.sin(self.rDH_param.theta[index]))*np.cos(self.rDH_param.alpha[index])
+        Ai_aux[0, 2] = np.sin(self.rDH_param.theta[index])*np.sin(self.rDH_param.alpha[index])
         # Translation Part
-        Ai_aux[0, 3] = 0.0
+        Ai_aux[0, 3] = self.rDH_param.a[index]*np.cos(self.rDH_param.theta[index])
 
         # << Calulation Second Row >>
         # Rotational Part
-        Ai_aux[1, 0] = 0.0
-        Ai_aux[1, 1] = 0.0
-        Ai_aux[1, 2] = 0.0
+        Ai_aux[1, 0] = np.sin(self.rDH_param.theta[index])
+        Ai_aux[1, 1] = np.cos(self.rDH_param.theta[index])*np.cos(self.rDH_param.alpha[index])
+        Ai_aux[1, 2] = (-1)*(np.cos(self.rDH_param.theta[index]))*(np.sin(self.rDH_param.alpha[index]))
         # Translation Part
-        Ai_aux[1, 3] = 0.0
+        Ai_aux[1, 3] = self.rDH_param.a[index]*np.sin(self.rDH_param.theta[index])
 
         # << Calulation Third Row >>
         # Rotational Part
-        Ai_aux[2, 0] = 0.0
-        Ai_aux[2, 1] = 0.0
-        Ai_aux[2, 2] = 0.0
+        Ai_aux[2, 0] = 0
+        Ai_aux[2, 1] = np.sin(self.rDH_param.alpha[index])
+        Ai_aux[2, 2] = np.cos(self.rDH_param.alpha[index])
         # Translation Part
-        Ai_aux[2, 3] = 0.0
+        Ai_aux[2, 3] = self.rDH_param.d[index]
 
         # << Set Fourth Row >>
         # Rotational Part
-        Ai_aux[3, 0] = 0.0
-        Ai_aux[3, 1] = 0.0
-        Ai_aux[3, 2] = 0.0
+        Ai_aux[3, 0] = 0
+        Ai_aux[3, 1] = 0
+        Ai_aux[3, 2] = 0
         # Translation Part
-        Ai_aux[3, 3] = 0.0
+        Ai_aux[3, 3] = 1
 
         return Ai_aux
 
