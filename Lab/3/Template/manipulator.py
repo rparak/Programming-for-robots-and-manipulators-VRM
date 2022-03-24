@@ -159,6 +159,11 @@ class Control(object):
         self.__theta_target[0] = theta[0]
         self.__theta_target[1] = theta[1]
 
+        if degree_repr == True:
+            self.rDH_param.theta = [x * (np.pi/180) for x in self.__theta_target]
+        else:
+            self.rDH_param.theta = self.__theta_target
+
         # After completing the calculation, reset the transformation matrix.
         self.__Tn_theta = np.matrix(np.identity(4))
 
