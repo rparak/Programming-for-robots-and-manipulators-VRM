@@ -78,8 +78,8 @@ class Control(object):
             Fast calculation of forward kinematics (in this case it is recommended to use).
         """
 
-        self.p[0] = 0.0
-        self.p[1] = 0.0
+        self.p[0] = round(self.rDH_param.a[0]*np.cos(self.rDH_param.theta[0]) + self.rDH_param.a[1]*np.cos(self.rDH_param.theta[0] + self.rDH_param.theta[1]), self.__rounding_index)
+        self.p[1] = round(self.rDH_param.a[0]*np.sin(self.rDH_param.theta[0]) + self.rDH_param.a[1]*np.sin(self.rDH_param.theta[0] + self.rDH_param.theta[1]), self.__rounding_index)
 
     def __dh_calc_fk(self, index):
         """
@@ -164,6 +164,14 @@ class Control(object):
         else:
             self.rDH_param.theta = self.__theta_target
 
+        if calc_type == 0:
+            for i in range(len(self.rDH_param.theta)):
+                self.__Tn_theta = self.__Tn_theta @ self.__dh_calc_fk(i)
+
+            self.__separete_translation_part()
+        elif calc_type == 1:
+            self.__fast_calc_fk()
+
         # After completing the calculation, reset the transformation matrix.
         self.__Tn_theta = np.matrix(np.identity(4))
 
@@ -186,6 +194,46 @@ class Control(object):
         self.__p_target[0] = p[0]
         self.__p_target[1] = p[1]
 
+        # Cosine Theorem [Beta]: eq (1)
+        cosT_beta_numerator   = ((self.rDH_param.a[0]**2) + (self.__p_target[0]**2 + self.__p_target[1]**2) - (self.rDH_param.a[1]**2))
+        cosT_beta_denumerator = (2*self.rDH_param.a[0]*np.sqrt(self.__p_target[0]**2 + self.__p_target[1]**2))
+        
+        # Calculation angle of Theta 1,2 (Inverse trigonometric functions):
+        # Rule 1: The range of the argument “x” for arccos function is limited from -1 to 1.
+        # −1 ≤ x ≤ 1
+        # Rule 2: Output of arccos is limited from 0 to π (radian).
+        # 0 ≤ y ≤ π
+
+        # Calculation angle of Theta 1
+        if cosT_beta_numerator/cosT_beta_denumerator > 1:
+            theta_aux[0] = np.arctan2(self.__p_target[1], self.__p_target[0]) 
+            print('[INFO] Theta 1 Error: ', self.__p_target[1], self.__p_target[0])
+        elif cosT_beta_numerator/cosT_beta_denumerator < -1:
+            theta_aux[0] = np.arctan2(self.__p_target[1], self.__p_target[0]) - np.pi 
+            print('[INFO] Theta 1 Error: ', self.__p_target[1], self.__p_target[0]) 
+        else:
+            if cfg == 0:
+                theta_aux[0] = np.arctan2(self.__p_target[1], self.__p_target[0]) - np.arccos(cosT_beta_numerator/cosT_beta_denumerator)
+            elif cfg == 1:
+                theta_aux[0] = np.arctan2(self.__p_target[1], self.__p_target[0]) + np.arccos(cosT_beta_numerator/cosT_beta_denumerator)
+                
+        # Cosine Theorem [Alha]: eq (2)
+        cosT_alpha_numerator   = (self.rDH_param.a[0]**2) + (self.rDH_param.a[1]**2) - (self.__p_target[0]**2 + self.__p_target[1]**2)
+        cosT_alpha_denumerator = (2*(self.rDH_param.a[0]*self.rDH_param.a[1]))
+
+        # Calculation angle of Theta 2
+        if cosT_alpha_numerator/cosT_alpha_denumerator > 1:
+            theta_aux[1] = np.pi
+            print('[INFO] Theta 2 Error: ', self.__p_target[1], self.__p_target[0])
+        elif cosT_alpha_numerator/cosT_alpha_denumerator < -1:
+            theta_aux[1] = 0.0
+            print('[INFO] Theta 2 Error: ', self.__p_target[1], self.__p_target[0])
+        else:
+            if cfg == 0:
+                theta_aux[1] = np.pi - np.arccos(cosT_alpha_numerator/cosT_alpha_denumerator)
+            elif cfg == 1:
+                theta_aux[1] = np.arccos(cosT_alpha_numerator/cosT_alpha_denumerator) - np.pi
+
         self.theta = theta_aux
 
         # Calculate the forward kinematics from the results of the inverse kinematics.
@@ -203,15 +251,23 @@ class Control(object):
             self._display_workspace(0)
         """
 
+        # Generate linearly spaced vectors for the each of joints.
+        theta_1 = np.linspace((self.ax_wr[0][0]) * (np.pi/180), (self.ax_wr[0][1]) * (np.pi/180), 100)
+        theta_2 = np.linspace((self.ax_wr[1][0]) * (np.pi/180), (self.ax_wr[1][1]) * (np.pi/180), 100)
+
+        # Return coordinate matrices from coordinate vectors.
+        [theta_1_mg, theta_2_mg] = np.meshgrid(theta_1, theta_2)
 
         # Find the points x, y in the workspace using the equations FK.
-        x_p = 0.0
-        y_p = 0.0
+        x_p = (self.rDH_param.a[0]*np.cos(theta_1_mg) + self.rDH_param.a[1]*np.cos(theta_1_mg + theta_2_mg))
+        y_p = (self.rDH_param.a[0]*np.sin(theta_1_mg) + self.rDH_param.a[1]*np.sin(theta_1_mg + theta_2_mg))
 
         if display_type == 0:
             plt.fill(x_p, y_p,'o', c=[0,1,0,0.05])
+            plt.plot(x_p[0][0], y_p[0][0],'.', label=u"Work Envelop", c=[0,1,0,0.5])
         elif display_type == 1:
             plt.plot(x_p, y_p,'o', c=[0,1,0,0.1])
+            plt.plot(x_p[0][0],y_p[0][0], '.', label=u"Work Envelop", c=[0,1,0,0.5])
 
     def display_environment(self, work_envelope = [False, 0]):
         """

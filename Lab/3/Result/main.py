@@ -36,13 +36,13 @@ def main():
     # Product Manual: https://search.abb.com/library/Download.aspx?DocumentID=3HAC056431-001&LanguageCode=en&DocumentPartId=&Action=Launch
 
     # Working range (Axis 1, Axis 2)
-    axis_wr = [[0.0, 0.0],[0.0, 0.0]]
+    axis_wr = [[-140.0, 140.0],[-150.0, 150.0]]
     # Length of Arms (Link 1, Link2)
-    arm_length = [0.0, 0.0]
+    arm_length = [0.3, 0.25]
 
     # DH (Denavit-Hartenberg) parameters
-    theta_0 = [0.0, 0.0]
-    a       = [0.0, 0.0]
+    theta_0 = [0.0,0.0]
+    a       = [arm_length[0], arm_length[1]]
     d       = [0.0, 0.0]
     alpha   = [0.0, 0.0]
 
@@ -54,12 +54,12 @@ def main():
     scara = manipulator.Control('ABB IRB 910SC (SCARA)', manipulator.DH_parameters(theta_0, a, d, alpha), axis_wr)
 
     # Test Results (Select one of the options -> See below)
-    test_kin = 'BOTH'
+    test_kin = 'IK'
 
     if test_kin == 'FK':
         scara.forward_kinematics(0, [0.0, 45.0], True)
     elif test_kin == 'IK':
-        scara.inverse_kinematics([0.4767767, 0.1767767],0)
+        scara.inverse_kinematics([0.4767767, 0.1767767], 0)
     elif test_kin == 'BOTH':
         scara.forward_kinematics(0, [0.0, 45.0], True)
         scara.inverse_kinematics(scara.p, 1)
@@ -70,7 +70,7 @@ def main():
     #  (1) Work Envelop Parameters
     #       a) Visible                   [BOOL]
     #       b) Type (0: Mesh, 1: Points) [INT]
-    scara.display_environment([True, 0])
+    scara.display_environment([True, 1])
 
 if __name__ == '__main__':
     sys.exit(main())
