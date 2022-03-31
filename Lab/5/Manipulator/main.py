@@ -79,12 +79,8 @@ def generate_circle(centroid, radius):
         generate_circle([1.0, 1.0], 0.1)
     """
 
-    # Circle ->  0 to 2*pi
-    theta = np.linspace(0, 2*np.pi, 25)
-
-    # Calculation position of the Circle
-    x = radius * np.cos(theta) + centroid[0]
-    y = radius * np.sin(theta) + centroid[1]
+    x = 0.0
+    y = 0.0
 
     return [x, y]
 
