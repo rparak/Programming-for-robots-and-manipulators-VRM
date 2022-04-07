@@ -39,15 +39,15 @@ from std_srvs.srv import Empty
 from turtlesim.srv import SetPen, TeleportAbsolute
 
 def pose_callback(pose):
-        """
-        Description:
-            Function to obtain a string with the number of points used in the calculation of the curve. (Figure Legend -> Label Name)
-            http://wiki.ros.org/turtlesim
-        Args:
-            (1) s_index [INT]: Number of points for calculation.
-        Returns:
-            (1) param 1 [String]: The resulting string for the label.
-        """
+    """
+    Description:
+        Function to obtain a string with the number of points used in the calculation of the curve. (Figure Legend -> Label Name)
+        http://wiki.ros.org/turtlesim
+    Args:
+        (1) s_index [INT]: Number of points for calculation.
+    Returns:
+        (1) param 1 [String]: The resulting string for the label.
+    """
 
     rospy.loginfo("Turtlesim X = %f, Y = %f, TH = %f", pose.x, pose.y, pose.theta)
 
