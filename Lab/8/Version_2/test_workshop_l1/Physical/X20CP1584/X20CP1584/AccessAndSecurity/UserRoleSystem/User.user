@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Configuration>
-  <Element ID="Anonymous" Type="User">               
-    <Property ID="UserID" Value="1" />    
-    <Group ID="Roles">
-      <Property ID="Role[1]" Value="Everyone" />
-    </Group>
-  </Element>
-</Configuration>

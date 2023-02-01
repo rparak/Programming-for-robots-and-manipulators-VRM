@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.8.3.111 SP?>
-<Package SubType="ResourcesPackage" PackageType="ResourcesPackage" xmlns="http://br-automation.co.at/AS/Package">
-  <Objects>
-    <Object Type="Package" Description="Texts">Texts</Object>
-    <Object Type="Package" Description="Snippets">Snippets</Object>
-  </Objects>
-</Package>

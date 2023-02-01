@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.8.3.111 SP?>
-<Package SubType="PagePackage" PackageType="PagePackage" xmlns="http://br-automation.co.at/AS/Package">
-  <Objects>
-    <Object Type="File" Description="Page description">HomePage.page</Object>
-    <Object Type="File">HomePageContent.content</Object>
-  </Objects>
-</Package>

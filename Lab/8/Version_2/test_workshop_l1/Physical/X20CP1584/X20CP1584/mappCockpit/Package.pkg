@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.8.3.111 SP?>
-<Package SubType="mappCockpit" PackageType="mappCockpit" xmlns="http://br-automation.co.at/AS/Package">
-  <Objects>
-    <Object Type="File">Settings.mcocfg</Object>
-  </Objects>
-</Package>
