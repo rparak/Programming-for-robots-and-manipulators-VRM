@@ -1,7 +1,7 @@
 # Programming for robots and manipulators (VRM)
 
 <p align="center">
-<img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/lab.png width="750" height="475">
+<img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/lab.png width="700" height="475">
 </p>
 
 ## Requirements:
