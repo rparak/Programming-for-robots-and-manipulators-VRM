@@ -63,7 +63,7 @@ class Control(object):
         self.theta = np.zeros(2)
         # << PRIVATE >> #
         # Transformation matrix for FK calculation [4x4]
-        self.__Tn_theta   = np.matrix(np.identity(4))
+        self.__Tn_theta   = np.zeros(np.identity(4))
         # Auxiliary variables -> Target (Translation, Joint/Rotation) for calculation FK/IK
         self.__p_target     = None
         self.__theta_target = np.zeros(2)
@@ -95,7 +95,7 @@ class Control(object):
         """
 
         # Reset/Initialize matrix
-        Ai_aux = np.matrix(np.identity(4), copy=False)
+        Ai_aux = np.zeros(np.identity(4), copy=False)
         
         # << Calulation First Row >>
         # Rotational Part
@@ -165,7 +165,7 @@ class Control(object):
             self.rDH_param.theta = self.__theta_target
 
         # After completing the calculation, reset the transformation matrix.
-        self.__Tn_theta = np.matrix(np.identity(4))
+        self.__Tn_theta = np.zeros(np.identity(4))
 
     def inverse_kinematics(self, p, cfg):
         """
