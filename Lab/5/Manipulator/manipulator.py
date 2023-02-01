@@ -61,7 +61,7 @@ class Control(object):
         # Joints Rotation -> theta(theta_1, theta_2)
         self.theta = np.zeros(2)
         # Jacobian Matrix (For the Jacobian Inverse Kinematics Calculation)
-        self.jacobian_matrix = np.zeros(np.identity(2))
+        self.jacobian_matrix = np.array(np.identity(2))
         # Control of the Visualization
         self.plt   = plt
         self.figure = self.plt.figure(num=None, figsize=(25, 17.5), dpi=80, facecolor='w', edgecolor='k')
@@ -79,7 +79,7 @@ class Control(object):
         )
         # << PRIVATE >> #
         # Transformation matrix for FK calculation [4x4]
-        self.__Tn_theta = np.zeros(np.identity(4))
+        self.__Tn_theta = np.array(np.identity(4))
         # Auxiliary variables -> Target (Translation, Joint/Rotation) for calculation FK/IK
         self.__p_target     = None
         self.__theta_target = np.zeros(2)
@@ -131,7 +131,7 @@ class Control(object):
         """
 
         # Reset/Initialize matrix
-        Ai_aux = np.zeros(np.identity(4), copy=False)
+        Ai_aux = np.array(np.identity(4), copy=False)
         
         # << Calulation First Row >>
         # Rotational Part
@@ -208,7 +208,7 @@ class Control(object):
             self.__fast_calc_fk()
 
         # After completing the calculation, reset the transformation matrix.
-        self.__Tn_theta = np.zeros(np.identity(4))
+        self.__Tn_theta = np.array(np.identity(4))
 
     def inverse_kinematics(self, p, cfg):
         """
