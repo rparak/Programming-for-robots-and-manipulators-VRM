@@ -96,7 +96,7 @@ class Control(object):
         """
 
         # Reset/Initialize matrix
-        Ai_aux = np.matrix(np.identity(4), copy=False)
+        Ai_aux = np.zeros(np.identity(4), copy=False)
         
         # << Calulation First Row >>
         # Rotational Part
@@ -174,7 +174,7 @@ class Control(object):
             self.__fast_calc_fk()
 
         # After completing the calculation, reset the transformation matrix.
-        self.__Tn_theta = np.matrix(np.identity(4))
+        self.__Tn_theta = np.zeros(np.identity(4))
 
     def inverse_kinematics(self, p, cfg):
         """
