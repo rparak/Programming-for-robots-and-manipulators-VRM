@@ -1,7 +1,7 @@
 # Programming for robots and manipulators (VRM)
 
 <p align="center">
-<img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/lab.png width="800" height="475">
+<img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/lab.png width="700" height="475">
 </p>
 
 ## Requirements:
@@ -43,21 +43,21 @@ Link: [Course descrition - FME, BUT](https://www.fme.vutbr.cz/en/studenti/predme
 
 ## Detailed description of the Syllabus:
 
-**Week 1:**
+**Part 1:**
 - Introduction to the course, main goals, methods and evaluation criteria, etc.
 - Introduction to the issue, development and definition of robots, manipulators.
 - Introduction of an advanced robotic production line called Industry 4.0 (i4C).
 
 Link: [Lecture 1](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/1)
 
-**Week 2:**
+**Part 2:**
 - Stationary industrial robots and single-purpose manipulators. Specific constructions of industrial robots, parallel structures. Programmable logic controllers (PLC) and use in robotics.
 - Control and programming of industrial robots. Introduction of basic tools for creating robotic simulations.
 - Assignment of seminar paper.
 
 Link: [Lecture 2](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/2)
 
-**Week 3:**
+**Part 3:**
 - End-effectors and their adaptability.
 - ABB RobotStudio - Workshop (Part 1: Introduction, Create tool, Simple task with an industrial robot, etc.)
 - Assignment of project.
@@ -70,7 +70,7 @@ Link: [Laboratory 1](https://github.com/rparak/Programming-for-robots-and-manipu
 <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/RS_LAB_1.PNG width="650" height="350">
 </p>
 
-**Week 4:**
+**Part 4:**
 - ABB RobotStudio - Workshop (Part 2: Simple task with an collaborative robot, Conveyor control, Smart gripper, Sync., etc.)
 
 Link: [Laboratory 2](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lab/2)
@@ -79,7 +79,7 @@ Link: [Laboratory 2](https://github.com/rparak/Programming-for-robots-and-manipu
 <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/RS_LAB_2.PNG width="650" height="350">
 </p>
 
-**Week 5:**
+**Part 5:**
 - Forward / Inverse Kinematics.
 - Demonstration of Forward / Inverse kinematics on a two-link simple manipulator. Creation of a working envelope of a specified robotic construction.
 
@@ -91,7 +91,7 @@ Link: [Laboratory 3](https://github.com/rparak/Programming-for-robots-and-manipu
 <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/FK_IK_LAB_3.PNG width="650" height="300">
 </p>
 
-**Week 6:**
+**Part 6:**
 - Differential Kinematics and Robotic Dynamics.
 - BRNO INDUSTRY 4.0 | 2021 ([online](https://brno-industry-40-online.b2match.io)): 5th International B2B Conference about Production Digitization and Smart Technologies for Industry
 - Demonstration of Differential Kinematics on a two-link simple manipulator. Example of dynamics calculation using Euler-Lagrange equation.
@@ -100,7 +100,7 @@ Link: [Lecture 5](https://github.com/rparak/Programming-for-robots-and-manipulat
 
 Link: [Laboratory 4](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lab/4)
 
-**Week 7:**
+**Part 7:**
 - Motion planning in robotics (mobile, industrial robots) using classical Joint / Cartesian interpolation and other planning methods such as RRT (Rapidly-exploring random tree), PRM (Probabilistic roadmap) and Reinforcement / Deep-Reinforcement learning.
 - Bezier curves (Linear, Quadratic, Cubic).
 - Demonstration of simple motion planning using Joint / Cartesian interpolation on a two-link manipulator. Trajectory smoothing using Bézier curves. Animation of the resulting trajectory, check of reachable points, etc.
@@ -114,7 +114,7 @@ Link: [Laboratory 5](https://github.com/rparak/Programming-for-robots-and-manipu
  <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/bezier.png width="400" height="325">
 </p>
 
-**Week 8:**
+**Part 8:**
 - ROS (Robot Operating System), ROS-I (Industrial) Introduction. 
 - ROS installation (melodic distribution), package configuration, explanation of basic concepts (topics, services, messages, etc.)
 - A simple example of TurtleSim motion control and working with a terminal.
@@ -127,14 +127,13 @@ Link: [Laboratory 6](https://github.com/rparak/Programming-for-robots-and-manipu
  <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/turtle2.png width="375" height="325">
 </p>
 
-**Week 9:**
-- National Holiday (Easter Monday)
+**Part 9:**
+- A lecture on an interesting topic related to robotics.
 
-
-**Week 10:**
+**Part 10:**
 - Simple demonstration of robot motion control and trajectory planning via the ROS system using several simulation tools (RVIZ, gazebo, etc.)
 - Controlling the movement of multiple industrial robots (ABB, Fanuc, Universal Robots, etc.) using the Python programming language (catkin, rospy, launch file, etc.)
-- Presentation of students' Bachelor's theses (ROS, robotics, system integration, etc.)
+- Presentation of students' Bachelor's / Master's theses (ROS, robotics, system integration, etc.)
 
 Link: [Laboratory 7](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lab/7)
 
@@ -144,7 +143,7 @@ Link: [Laboratory 7](https://github.com/rparak/Programming-for-robots-and-manipu
  <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/rviz_4.png width="355" height="275">
 </p>
 
-**Week 11:**
+**Part 11:**
 - Unity3D as a tool for creating digital / virtual twins, connection with B&R Automation Studio (follow-up project from the VPL course).
 - Introduction to augmented reality and a simple demonstration of the application in the real world.
 
@@ -156,7 +155,7 @@ Link: [Laboratory 8](https://github.com/rparak/Programming-for-robots-and-manipu
  <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/lin_ax_2.png width="650" height="425">
 </p>
 
-**Week 12:**
+**Part 12:**
 - Introduction to the concept of Industry 4.0. 
 - Industry 5.0, 6.0 and automation a few years later.
 
@@ -164,7 +163,7 @@ Link: [Laboratory 8](https://github.com/rparak/Programming-for-robots-and-manipu
 <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/i4C_m.png width="800" height="475">
 </p>
 
-**Week 13:**
+**Part 13:**
 - Presentation of team projects.
 
 ## Assessment Methodology:
