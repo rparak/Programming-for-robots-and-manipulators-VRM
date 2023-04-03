@@ -203,15 +203,23 @@ class Control(object):
             self._display_workspace(0)
         """
 
+        # Generate linearly spaced vectors for the each of joints.
+        theta_1 = np.linspace((self.ax_wr[0][0]) * (np.pi/180), (self.ax_wr[0][1]) * (np.pi/180), 100)
+        theta_2 = np.linspace((self.ax_wr[1][0]) * (np.pi/180), (self.ax_wr[1][1]) * (np.pi/180), 100)
+
+        # Return coordinate matrices from coordinate vectors.
+        [theta_1_mg, theta_2_mg] = np.meshgrid(theta_1, theta_2)
 
         # Find the points x, y in the workspace using the equations FK.
-        x_p = 0.0
-        y_p = 0.0
+        x_p = (self.rDH_param.a[0]*np.cos(theta_1_mg) + self.rDH_param.a[1]*np.cos(theta_1_mg + theta_2_mg))
+        y_p = (self.rDH_param.a[0]*np.sin(theta_1_mg) + self.rDH_param.a[1]*np.sin(theta_1_mg + theta_2_mg))
 
         if display_type == 0:
             plt.fill(x_p, y_p,'o', c=[0,1,0,0.05])
+            plt.plot(x_p[0][0], y_p[0][0],'.', label=u"Work Envelop", c=[0,1,0,0.5])
         elif display_type == 1:
             plt.plot(x_p, y_p,'o', c=[0,1,0,0.1])
+            plt.plot(x_p[0][0],y_p[0][0], '.', label=u"Work Envelop", c=[0,1,0,0.5])
 
     def display_environment(self, work_envelope = [False, 0]):
         """
