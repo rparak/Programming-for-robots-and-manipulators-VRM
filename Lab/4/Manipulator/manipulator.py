@@ -167,7 +167,7 @@ class Control(object):
 
         if calc_type == 0:
             for i in range(len(self.rDH_param.theta)):
-                self.__Tn_theta =  self.__Tn_theta * self.__dh_calc_fk(i)
+                self.__Tn_theta =  self.__Tn_theta @ self.__dh_calc_fk(i)
 
             self.__separete_translation_part()
         elif calc_type == 1:
