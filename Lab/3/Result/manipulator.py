@@ -31,6 +31,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 
+
 class DH_parameters(object):
     # << DH (Denavit-Hartenberg) parameters structure >> #
     def __init__(self, theta, a, d, alpha):
@@ -60,8 +61,6 @@ class Control(object):
         self.p = np.zeros(2)
         # Joints Rotation -> theta(theta_1, theta_2)
         self.theta = np.zeros(2)
-        # Jacobian Matrix (For the Jacobian Inverse Kinematics Calculation)
-        self.jacobian_matrix = np.array(np.identity(2))
         # << PRIVATE >> #
         # Transformation matrix for FK calculation [4x4]
         self.__Tn_theta   = np.array(np.identity(4))
@@ -89,7 +88,7 @@ class Control(object):
         Args:
             (1) index [INT]: Index of episode (Number of episodes is depends on number of joints)
         Returns:
-            (1) parameter{1} [Float Matrix 4x4]: Transformation Matrix in the current episode
+            (2) Ai_aux [Float Matrix 4x4]: Transformation Matrix in the current episode
 
         Examples:
             self.forward_kinematics(0, [0.0, 45.0])
@@ -149,7 +148,7 @@ class Control(object):
             Joint Angles (Theta_1, Theta_2) <-> Position of End-Effector (x, y)
         Args:
             (1) calc_type [INT]: Select the type of calculation (0: DH Table, 1: Fast).
-            (2) theta [Float Array]: Joint angle of target in degrees/radians.
+            (2) theta [Float Array]: Joint angle of target in degrees.
             (3) degree_repr [BOOL]: Representation of the input joint angle (Degree).
 
         Examples:
@@ -167,7 +166,7 @@ class Control(object):
 
         if calc_type == 0:
             for i in range(len(self.rDH_param.theta)):
-                self.__Tn_theta =  self.__Tn_theta * self.__dh_calc_fk(i)
+                self.__Tn_theta = self.__Tn_theta @ self.__dh_calc_fk(i)
 
             self.__separete_translation_part()
         elif calc_type == 1:
@@ -208,10 +207,10 @@ class Control(object):
         # Calculation angle of Theta 1
         if cosT_beta_numerator/cosT_beta_denumerator > 1:
             theta_aux[0] = np.arctan2(self.__p_target[1], self.__p_target[0]) 
-            print('[INFO] Theta 1 Warning: ', self.__p_target[1], self.__p_target[0])
+            print('[INFO] Theta 1 Error: ', self.__p_target[1], self.__p_target[0])
         elif cosT_beta_numerator/cosT_beta_denumerator < -1:
             theta_aux[0] = np.arctan2(self.__p_target[1], self.__p_target[0]) - np.pi 
-            print('[INFO] Theta 1 Warning: ', self.__p_target[1], self.__p_target[0]) 
+            print('[INFO] Theta 1 Error: ', self.__p_target[1], self.__p_target[0]) 
         else:
             if cfg == 0:
                 theta_aux[0] = np.arctan2(self.__p_target[1], self.__p_target[0]) - np.arccos(cosT_beta_numerator/cosT_beta_denumerator)
@@ -225,10 +224,10 @@ class Control(object):
         # Calculation angle of Theta 2
         if cosT_alpha_numerator/cosT_alpha_denumerator > 1:
             theta_aux[1] = np.pi
-            print('[INFO] Theta 2 Warning: ', self.__p_target[1], self.__p_target[0])
+            print('[INFO] Theta 2 Error: ', self.__p_target[1], self.__p_target[0])
         elif cosT_alpha_numerator/cosT_alpha_denumerator < -1:
             theta_aux[1] = 0.0
-            print('[INFO] Theta 2 Warning: ', self.__p_target[1], self.__p_target[0])
+            print('[INFO] Theta 2 Error: ', self.__p_target[1], self.__p_target[0])
         else:
             if cfg == 0:
                 theta_aux[1] = np.pi - np.arccos(cosT_alpha_numerator/cosT_alpha_denumerator)
@@ -240,79 +239,7 @@ class Control(object):
         # Calculate the forward kinematics from the results of the inverse kinematics.
         self.forward_kinematics(0, self.theta, False)
 
-    def inverse_kinematics_jacobian(self, p_target, theta, accuracy, num_of_iter):
-        """
-        Description:
-            The Jacobian matrix method is an incremental method of inverse kinematics 
-            (the motion required to move a limb to a certain position may be performed over several frames). 
-        Args:
-            (1) p_target [Float Array]: Position (x, y) of the target in meters.
-            (2) theta [Float Array]: Joint angle of target in radians.
-            (3) accuracy [Float]: Accuracy of inverse kinematics calculation.
-            (4) num_of_iter [INT]: Number of iterations of the calculation.
-
-        Examples:
-            self.inverse_kinematics_jacobian([0.35, 0.15], [0.0, 0.0], 0.0001, 10000)
-        """
-
-        theta_actual = np.array(theta)
-        self.__p_target = np.array(p_target)
-
-        theta_tmp = np.array([theta[0], theta[0]])
-        for i in range(num_of_iter):
-            # Get Jacobian Matrix from actual theta.
-            self.__calc_jacobian_matrix([theta_actual[0], theta_actual[1]])
-
-            # Calculation of position error (e_p).
-            e_p = np.array((self.__p_target - self.p))
-
-            #  Calculation of Jac. Matrix determinant (for finding singularities).
-            if np.linalg.det(self.jacobian_matrix) != 0:
-                # Calculation of theta using inverse Jacobian method: 
-                #   theta = inv(J) @ e
-                theta_actual += np.linalg.inv(self.jacobian_matrix) @ e_p
-            else:
-                # Calculation of theta using pseudoinverse Jacobian method: 
-                #   theta = pinv(J) @ e
-                theta_actual += np.linalg.pinv(self.jacobian_matrix) @ e_p
-
-            # Get actual position of the end-effector from the actual theta (absolute position of the joint).
-            self.forward_kinematics(0, [theta_actual[0], theta_actual[1]], False)
-
-            if np.linalg.norm(self.__p_target - self.p) < accuracy:
-                print('[INFO] Result found in iteration no. ', i)
-                print('[INFO] Target Position (End-Effector):')
-                print('[INFO] p_t  = [x: %f, y: %f]' % (self.__p_target[0], self.__p_target[1]))
-                print('[INFO] Actual Position (End-Effector):')
-                print('[INFO] p_ee = [x: %f, y: %f]' % (self.p[0], self.p[1]))
-                print('[INFO] IK Jacobian (Accuracy Error):')
-                print('[INFO] Euclidean Distance: %f' % np.linalg.norm(self.__p_target - self.p))
-                break
-
-            # Check that the actual absolute position of the joint is out of limit.
-            for i in range(2):
-                if theta_actual[i] < self.ax_wr[i][0] * (np.pi/180) or theta_actual[i] > self.ax_wr[i][1] * (np.pi/180):
-                    theta_actual[i] = theta_tmp[i]
-                else:
-                    theta_tmp[i] = theta_actual[i]
-
-        self.theta = theta_actual
-
-    def __calc_jacobian_matrix(self, theta):
-        """
-        Description:
-            Creating a Jacobian matrix for the actual value of theta.
-
-        Args:
-            (1) theta [Float Array]: Joint angle of target in radians.
-        """
-
-        self.jacobian_matrix[0, 0] = round(((-1)*self.rDH_param.a[0]*np.sin(theta[0])) + ((-1)*self.rDH_param.a[1]*np.sin(theta[0] + theta[1])), self.__rounding_index)
-        self.jacobian_matrix[0, 1] = round((-1)*self.rDH_param.a[1]*np.sin(theta[0] + theta[1]), self.__rounding_index)
-        self.jacobian_matrix[1, 0] = round((self.rDH_param.a[0]*np.cos(theta[0])) + (self.rDH_param.a[1]*np.cos(theta[0] + theta[1])), self.__rounding_index)
-        self.jacobian_matrix[1, 1] = round((self.rDH_param.a[1]*np.cos(theta[0] + theta[1])), self.__rounding_index)
-
-    def __display_workspace(self, display_type = 0):
+    def _display_workspace(self, display_type = 0):
         """
         Description:
             Display the work envelope (workspace) in the environment.
@@ -359,10 +286,10 @@ class Control(object):
 
         # Condition for visible work envelop
         if work_envelope[0] == True:
-            self.__display_workspace(work_envelope[1])
+            self._display_workspace(work_envelope[1])
 
         if not (self.__p_target is None):
-            if (round(self.__p_target[0], 5) != round(self.p[0], 5)) and (round(self.__p_target[1], 5) != round(self.p[1], 5)):
+            if (self.__p_target[0] != self.p[0]) and (self.__p_target[1] != self.p[1]):
                 plt.plot(self.__p_target[0], self.__p_target[1], label=r'Target Position: $p_{(x, y)}$', marker = 'o', ms = 30, mfc = [1,0,0], markeredgecolor = [0,0,0], mew = 5)
             else:
                 plt.plot(self.__p_target[0], self.__p_target[1], label=r'Target Position: $p_{(x, y)}$', marker = 'o', ms = 30, mfc = [1,1,0], markeredgecolor = [0,0,0], mew = 5)
@@ -449,4 +376,3 @@ class Control(object):
             print('[INFO] Theta  = [Theta_1: %f, Theta_2: %f]' % (self.__theta_target[0], self.__theta_target[1]))
             print('[INFO] Actual Position (End-Effector):')
             print('[INFO] p_ee = [x: %f, y: %f]' % (self.p[0], self.p[1]))
-
