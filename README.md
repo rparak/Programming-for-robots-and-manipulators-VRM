@@ -220,9 +220,11 @@ The script for the calculation can be found at [[Link](https://github.com/rparak
 2. [Science Direct](https://www.sciencedirect.com)
 3. [Springer - International Publisher Science](https://www.springer.com/gp)
 
-## YouTube:
-2021: https://www.youtube.com/watch?v=YzlaLfuPLOY&t=1s
-2022: https://www.youtube.com/watch?v=pPqqe7-ma-Q&t=2s
+## Course Preview:
+
+YouTube (2021): https://www.youtube.com/watch?v=YzlaLfuPLOY&t=1s
+
+YouTube (2022): https://www.youtube.com/watch?v=pPqqe7-ma-Q&t=2s
 
 ## Contact Info:
 Roman.Parak@vutbr.cz or Microsoft Teams (recommended)
