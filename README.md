@@ -165,6 +165,17 @@ Link: [Laboratory 8](https://github.com/rparak/Programming-for-robots-and-manipu
 **Part 13:**
 - Presentation of team projects.
 
+## Practical Demonstration:
+
+The practical form of the VRM course will be carried out in the I4C (Industry 4.0 Cell) laboratory on several tasks related to industrial robotics. Each task is assigned by the course leader and students implement it in a real robot. The practical exercise will end with a defense of the results of each task.
+
+<p align="center">
+ <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/Station_IRB_120.jpg width="650" height="425">
+ <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/Station_Yumi.jpg width="650" height="425">
+ <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/Station_UR3.jpg width="650" height="425">
+ <img src=https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/blob/main/images/Station_Epson.jpg width="650" height="425">
+</p>
+
 ## Assessment Methodology:
 
 **Description:**
