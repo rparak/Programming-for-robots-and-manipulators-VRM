@@ -93,7 +93,6 @@ Link: [Laboratory 3](https://github.com/rparak/Programming-for-robots-and-manipu
 
 **Part 6:**
 - Differential Kinematics and Robotic Dynamics.
-- BRNO INDUSTRY 4.0 | 2021 ([online](https://brno-industry-40-online.b2match.io)): 5th International B2B Conference about Production Digitization and Smart Technologies for Industry
 - Demonstration of Differential Kinematics on a two-link simple manipulator. Example of dynamics calculation using Euler-Lagrange equation.
 
 Link: [Lecture 5](https://github.com/rparak/Programming-for-robots-and-manipulators-VRM/tree/main/Lecture/5)
@@ -128,7 +127,7 @@ Link: [Laboratory 6](https://github.com/rparak/Programming-for-robots-and-manipu
 </p>
 
 **Part 9:**
-- A lecture on an interesting topic related to robotics.
+- A lecture on an interesting topic related to robotics. It can be realized by a company from the South Moravian region (INTEMAC, B&R Automation, SMC Industrial Automation, etc.)
 
 **Part 10:**
 - Simple demonstration of robot motion control and trajectory planning via the ROS system using several simulation tools (RVIZ, gazebo, etc.)
