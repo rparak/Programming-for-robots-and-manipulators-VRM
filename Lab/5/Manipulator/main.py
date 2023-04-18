@@ -34,6 +34,60 @@ from matplotlib import animation
 # Numpy (Array computing Lib.) [pip3 install numpy]
 import numpy as np
 
+def generate_rectangle(centroid, dimension, angle):
+    """
+    Description:
+        A simple function to generate a path for a rectangle.
+
+    Args:
+        (1) centroid [Float Array]: Centroid of the Rectangle (x, y).
+        (2) dimension [Float Array]: Dimensions (width, height).
+        (3) angle [Float]: Angle (Degree) of the Rectangle.
+        
+    Returns:
+        (1 - 2) parameter{1}, parameter{2} [Float Array]: Results of path values.
+
+    Examples:
+        generate_rectangle([1.0, 1.0], [1.0, 1.0], 0.0)
+    """
+
+    p = [[(-1)*dimension[0]/2, (-1)*dimension[0]/2, (+1)*dimension[0]/2, (+1)*dimension[0]/2, (-1)*dimension[0]/2],
+         [(-1)*dimension[1]/2, (+1)*dimension[1]/2, (+1)*dimension[1]/2, (-1)*dimension[1]/2, (-1)*dimension[1]/2]]
+
+    x = []
+    y = []
+
+    for i in range(len(p[0])):
+        # Calculation position of the Rectangle
+        x.append((p[0][i]*np.cos(angle * (np.pi/180)) - p[1][i]*np.sin(angle * (np.pi/180))) + centroid[0])
+        y.append((p[0][i]*np.sin(angle * (np.pi/180)) + p[1][i]*np.cos(angle * (np.pi/180))) + centroid[1])
+
+    return [x, y]
+
+def generate_circle(centroid, radius):
+    """
+    Description:
+        A simple function to generate a path for a circle.
+
+    Args:
+        (1) centroid [Float Array]: Centroid of the Circle (x, y).
+        (1) radius [Float]: Radius of the Circle (r).
+    Returns:
+        (1 - 2) parameter{1}, parameter{2} [Float Array]: Results of path values.
+
+    Examples:
+        generate_circle([1.0, 1.0], 0.1)
+    """
+
+    # Circle ->  0 to 2*pi
+    theta = np.linspace(0, 2*np.pi, 25)
+
+    # Calculation position of the Circle
+    x = radius * np.cos(theta) + centroid[0]
+    y = radius * np.sin(theta) + centroid[1]
+
+    return [x, y]
+
 def main():
     # Initial Parameters -> ABB IRB910SC 
     # Product Manual: https://search.abb.com/library/Download.aspx?DocumentID=3HAC056431-001&LanguageCode=en&DocumentPartId=&Action=Launch
