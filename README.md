@@ -215,7 +215,7 @@ The script for the calculation can be found at [[Link](https://github.com/rparak
 7. **Industrial Robotics: Theory, Modelling and Control**, Sam Cubero
 8. **Mathematics for Computer Graphics**, John Vince
 
-**Other:**
+**Others:**
 1. [IEEE Xplore](https://ieeexplore.ieee.org/Xplore/home.jsp)
 2. [Science Direct](https://www.sciencedirect.com)
 3. [Springer - International Publisher Science](https://www.springer.com/gp)
