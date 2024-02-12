@@ -231,5 +231,16 @@ YouTube (2023): https://www.youtube.com/watch?v=J0LXaKxu6bs&t=15s
 ## Contact Info:
 Roman.Parak@vutbr.cz or Microsoft Teams (recommended)
 
+## Citation (BibTex)
+```bash
+@misc{RomanParak_VRM,
+  author = {Roman Parak},
+  title = {Programming for robots and manipulators (VRM)},
+  year = {2021 - 2023},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/rparak/Programming-for-robots-and-manipulators-VRM}}
+}
+```
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
