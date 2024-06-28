@@ -228,6 +228,8 @@ YouTube (2022): https://www.youtube.com/watch?v=pPqqe7-ma-Q&t=2s
 
 YouTube (2023): https://www.youtube.com/watch?v=J0LXaKxu6bs&t=15s
 
+YouTube (2024): https://www.youtube.com/watch?v=WGuWrrZOnNk
+
 ## Contact Info:
 Roman.Parak@vutbr.cz or Microsoft Teams (recommended)
 
